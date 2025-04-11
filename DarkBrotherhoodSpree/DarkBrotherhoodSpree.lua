@@ -1,6 +1,6 @@
 -- little hack to get the current interactable name
 local lastInteractableName
-ZO_PreHook(FISHING_MANAGER, "StartInteraction", function()
+ZO_PreHook(INTERACTIVE_WHEEL_MANAGER, "StartInteraction", function()
 	local _, name = GetGameCameraInteractableActionInfo()
 	lastInteractableName = name
 end)
